@@ -10,7 +10,7 @@ class Solution(object):
         """
         reversed = 0
         sign = 1
-        if x < 0:
+        if x < 0: # math.abs() would add a condition
             sign = -1    
             x = -x 
         while x != 0:  # I guess x = int(str(x)[::-1]) is not expected here
