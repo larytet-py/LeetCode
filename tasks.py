@@ -13,7 +13,7 @@ class Solution(object):
         if x < 0:
             sign = -1    
             x = -x 
-        while x != 0:
+        while x != 0:  # I guess x = int(str(x)[::-1]) is not expected here
             digit = x % 10
             x = x / 10
             reversed = reversed * 10 + digit
